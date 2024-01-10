@@ -88,8 +88,8 @@ func (this *douyin) set(tv *TV) error {
 	if err != nil {
 		return err
 	}
-	flv := streamData.Data.Sd.Main.Flv
-	hls := streamData.Data.Sd.Main.Hls
+	flv := streamData.Data.Sd2.Main.Flv
+	hls := streamData.Data.Sd2.Main.Hls
 	_ = hls
 	tv.streamURL = flv
 	tv.roomOn = true
